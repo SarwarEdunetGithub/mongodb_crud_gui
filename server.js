@@ -7,7 +7,7 @@ const app = express();
 const port = 3000;
 
 // MongoDB connection
-mongoose.connect('mongodb://localhost:27017/branddb', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://demomongo123:demomongo123@cluster0.bwegp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('Connected to MongoDB'))
     .catch(err => console.error('Error connecting to MongoDB', err));
 
